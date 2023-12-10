@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-Br" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- 
+			-- Primary Meta Tags 
+		-->
+		<title>VOC Finance | Assessoria Empresarial</title>
+		<meta name="title" content="VOC Finance" />
+		<meta
+			name="description"
+			content="Página da Assessoria financeira VOC Finance"
+		/>
+
+		<link rel="stylesheet" href="dist/output.css" />
+	</head>
+
+	<body class="font-body font-light">
+		<!-- ------------------- <header> ------------------- -->
+		<header class="fixed z-50 w-full bg-white">
+			<nav id="navbar" class="h-20 flex items-center justify-between px-16">
+				<img
+					src="src/img/voc-new-logo.png"
+					alt="logo da VOC Finance"
+					class="h-16 w-70"
+				/>
+
+				<button id="menuButton" class="sm:hidden" onclick="toggleMenu()">
+					☰
+				</button>
+
+				<div
+					id="fullscreenMenu"
+					class="hidden fixed top-0 left-0 h-screen w-1/2 bg-white z-50"
+				>
+					<ul class="h-full flex flex-col justify-center items-center">
+						<li class="mb-6">
+							<a href="#hero" class="text-xl text-gray-600 hover:underline"
+								>Início</a
+							>
+						</li>
+						<li class="mb-6">
+							<a href="#services" class="text-xl text-gray-600 hover:underline"
+								>Serviços</a
+							>
+						</li>
+						<li class="mb-6">
+							<a
+								href="#turnaround"
+								class="text-xl text-gray-600 hover:underline"
+								>Turnaround</a
+							>
+						</li>
+						<li class="mb-6">
+							<a href="#about-s" class="text-xl text-gray-600 hover:underline"
+								>Sobre Nós</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Menu Principal (visível apenas em telas maiores) -->
+				<ul class="hidden sm:flex items-center flex-wrap font-normal">
+					<li>
+						<a
+							href="#hero"
+							class="text-normal text-gray-600 hover:underline px-2"
+							>Início</a
+						>
+					</li>
+					<li>
+						<a
+							href="#services"
+							class="text-normal text-gray-600 hover:underline px-2"
+							>Serviços</a
+						>
+					</li>
+					<li>
+						<a
+							href="#turnaround"
+							class="text-normal text-gray-600 hover:underline px-2"
+							>Turnaround</a
+						>
+					</li>
+					<li>
+						<a
+							href="#about-us"
+							class="text-normal text-gray-600 hover:underline px-2"
+							>Sobre Nós</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- ------------------- </header> ------------------- -->
+
+		<!-- ------------------- <main> ------------------- -->
+		<main>
+			<section id="hero" class="relative w-full h-screen overflow-hidden">
+				<div class="absolute inset-0 z-10 bg-black bg-opacity-50"></div>
+
+				<div
+					class="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+				>
+					<video autoplay muted loop class="w-full h-full object-cover">
+						<source src="src/video/sea-with-rocks.mp4" type="video/mp4" />
+					</video>
+				</div>
+
+				<div
+					class="absolute z-20 inset-0 flex flex-col items-center justify-center"
+				>
+					<h1 class="text-center max-w-6xl text-white text-5xl font-bold">
+						More value for your business
+					</h1>
+
+					<p
+						class="p-4 md:p-8 lg:p-12 max-w-6xl text-white text-center text-xl"
+					>
+						Consultoria empresarial dedicada a auxiliar empresas a navegar com
+						sucesso por ambientes complexos. Com estratégias personalizadas e
+						especialistas experientes, somos o seu guia confiável rumo ao
+						crescimento e à estabilidade.
+					</p>
+
+					<button
+						class="bg-blue-950 hover:bg-blue-900 text-white font-bold py-2 px-6 rounded transition duration-300 z-30"
+					>
+						<a
+							href="https://api.whatsapp.com/send?phone=5551989560443&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20VOC."
+							target="_blank"
+							>Fale Com Um Consultor</a
+						>
+					</button>
+				</div>
+			</section>
+
+			<section id="services" class="px-4 md:px-8 lg:px-16">
+				<h2
+					class="mx-auto text-center text-4xl md:text-5xl lg:text-6xl py-32 font-bold"
+				>
+					Descubra como nossas estratégias podem potencializar o seu negócio
+				</h2>
+			</section>
+
+			<section
+				id="cards"
+				class="flex flex-wrap justify-center items-start gap-6 pb-24 px-16"
+			>
+				<div
+					class="card transform transition duration-500 hover:scale-105 min-w-72 max-w-sm w-full md:w-72 rounded overflow-hidden shadow-lg hover:shadow-xl flex flex-col"
+				>
+					<img
+						class="w-full"
+						src="src/img/corporative-education.jpeg"
+						alt="Imagem educação corporativa"
+					/>
+					<div class="px-6 py-4 flex-1 flex flex-col">
+						<div class="font-bold text-xl mb-2">Educação Corporativa</div>
+						<p class="cardText text-gray-700 text-base flex-1 hidden">
+							Estruturação e condução de treinamentos corporativos customizados
+							nas áreas de finanças, economia e jurídica, com o objetivo de
+							aprimorar a qualificação dos proprietários, gestores e demais
+							colaboradores, com foco na tomada de decisões
+						</p>
+						<div class="pt-4 pb-2">
+							<button
+								class="toggleButton bg-blue-950 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-300"
+							>
+								Saiba Mais
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- card-2 -->
+				<div
+					class="card transform transition duration-500 hover:scale-105 min-w-72 max-w-sm w-full md:w-72 rounded overflow-hidden shadow-lg hover:shadow-xl flex flex-col"
+				>
+					<img
+						class="w-full"
+						src="src/img/fusions.jpeg"
+						alt="Imagem do Card 2"
+					/>
+					<div class="px-6 py-4 flex-1 flex flex-col">
+						<div class="font-bold text-xl mb-2">Fusões e Aquisições</div>
+						<p class="cardText text-gray-700 text-base flex-1 hidden">
+							Elaboração de estudo, prospecção de empresas e investidores e
+							condução das negociações em processos de fusões e aquisições, seja
+							como comprador ou como vendedor, visando a maximização de valor
+							para os acionistas.
+						</p>
+						<div class="pt-4 pb-2">
+							<button
+								class="toggleButton bg-blue-950 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-300"
+							>
+								Saiba Mais
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="card transform transition duration-500 hover:scale-105 min-w-72 max-w-sm w-full md:w-72 rounded overflow-hidden shadow-lg hover:shadow-xl flex flex-col"
+				>
+					<img
+						class="w-full"
+						src="src/img/visibility-studies.jpeg"
+						alt="Imagem Estudos de viabilidade"
+					/>
+					<div class="px-6 py-4 flex-1 flex flex-col">
+						<div class="font-bold text-xl mb-2">Estudos de Viabilidade</div>
+						<p class="cardText text-gray-700 text-base flex-1 hidden">
+							Elaboração de estudo sobre a viabilidade econômica de projetos de
+							investimentos, para subsidiar as decisões sobre a alocação de
+							recursos, buscando maximizar a geração de valor
+						</p>
+						<div class="pt-4 pb-2">
+							<button
+								class="toggleButton bg-blue-950 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-300"
+							>
+								Saiba Mais
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="card transform transition duration-500 hover:scale-105 min-w-72 max-w-sm w-full md:w-72 rounded overflow-hidden shadow-lg hover:shadow-xl flex flex-col"
+				>
+					<img
+						class="w-full"
+						src="src/img/valuation.jpeg"
+						alt="Imagem de Valuation"
+					/>
+					<div class="px-6 py-4 flex-1 flex flex-col">
+						<div class="font-bold text-xl mb-2">Valuation</div>
+						<p class="cardText text-gray-700 text-base flex-1 hidden">
+							Elaboração de estudo para estimar o valor de uma empresa, que
+							poderá subsidiar transações entre sócios, captações de recursos
+							junto à investidores, decisões estratégicas ou transações com
+							outras empresas (M&A).
+						</p>
+						<div class="pt-4 pb-2">
+							<button
+								class="toggleButton bg-blue-950 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-300"
+							>
+								Saiba Mais
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="turnaround"
+				class="bg-info-image bg-no-repeat bg-cover bg-fixed text-white relative"
+			>
+				<div class="absolute inset-0 z-10 bg-black bg-opacity-50"></div>
+
+				<div
+					class="relative z-20 px-4 sm:px-8 md:px-16 lg:px-24 py-16 sm:py-20 md:py-28 lg:py-36 flex flex-col items-center justify-center"
+				>
+					<h2 class="text-center text-4xl sm:text-5xl md:text-6xl font-bold">
+						Gestão Estratégica e Recuperação de Empresas
+					</h2>
+				</div>
+			</section>
+
+			<section class="flex flex-col justify-center items-center md:px-16 pt-24">
+				<div>
+					<img
+						src="src/img/process-bigger.png"
+						alt=""
+						class="hidden md:block"
+					/>
+					<img
+						src="src/img/know-our-process.jpeg"
+						alt=""
+						class="block md:hidden"
+					/>
+				</div>
+
+				<div class="py-24">
+					<button
+						class="bg-blue-950 hover:bg-blue-900 text-white font-bold py-2 px-6 rounded transition duration-300"
+					>
+						<a
+							href="https://api.whatsapp.com/send?phone=5551989560443&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20VOC."
+							target="_blank"
+							>Fale Com Um Consultor</a
+						>
+					</button>
+				</div>
+			</section>
+
+			<!-- -------------------------- <differences> -------------------------- -->
+			<section class="px-4 md:px-8 lg:px-16"></section>
+
+			<section
+				id=""
+				class="bg-founders-image bg-no-repeat bg-cover bg-fixed text-white relative pb-24"
+			>
+				<div class="absolute inset-0 z-10 bg-black bg-opacity-50"></div>
+
+				<div
+					class="relative z-20 px-4 sm:px-8 md:px-16 lg:px-24 py-16 sm:py-20 flex flex-col items-center justify-center"
+				>
+					<h2
+						class="text-center text-4xl md:text-5xl lg:text-6xl py-24 font-bold"
+					>
+						Nossos Diferenciais
+					</h2>
+				</div>
+
+				<div
+					class="flex flex-col sm:flex-row z-30 items-center justify-center flex-wrap pb-24 relative px-13"
+				>
+					<img src="src/img/differences-1+.png" alt="diferenças" />
+					<img src="src/img/differences-2.png" alt="diferenças" />
+				</div>
+			</section>
+
+			<section id="about-us" class="flex flex-col justify-center items-center">
+				<h2 class="text-6xl font-bold text-center py-24 px-16">Sobre Nós</h2>
+
+				<p class="px-5 sm:16 lg:px-52 text-2xl text-justify">
+					O nome VOC é uma homenagem à lendária Companhia das Índias Orientais
+					Unidas, uma força pioneira na expansão marítima internacional e no
+					desenvolvimento do mercado financeiro global...
+				</p>
+
+				<p
+					id="moreText"
+					class="hidden px-5 sm:16 lg:px-52 text-2xl text-justify cardText py-5"
+				>
+					Fundada em 1602, a VOC desempenhou um papel fundamental na criação da
+					bolsa de valores de Amsterdã, sendo uma das primeiras empresas de
+					capital aberto da história. Inspirados por esse legado, na VOC
+					Finance, estamos comprometidos em oferecer soluções que auxiliem
+					nossos clientes a expandir seus negócios, superar desafios econômicos
+					e criar um impacto positivo na sociedade. Nossa dedicação é construir
+					um futuro empresarial sólido e sustentável.
+				</p>
+
+				<div class="pt-4 pb-2">
+					<button
+						id="toggleButton"
+						class="bg-blue-950 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-300"
+					>
+						Saiba Mais
+					</button>
+				</div>
+			</section>
+
+			<section class="py-24">
+				<h2 class="text-4xl text-center font-bold pb-12">
+					Conheça Nossos Fundadores
+				</h2>
+
+				<section
+					id="cards"
+					class="flex flex-wrap justify-center items-center gap-6 px-5"
+				>
+					<div
+						class="card transform transition duration-500 hover:scale-105 min-w-72 max-w-sm w-full md:w-72 rounded overflow-hidden shadow-lg hover:shadow-xl flex flex-col"
+					>
+						<img class="w-full" src="src/img/jorge.jpeg" alt="Foto do Jorge" />
+						<div class="px-6 py-4 flex-1 flex flex-col">
+							<div class="font-bold text-xl mb-2">Jorge Ferreira - CEO</div>
+							<p class="cardText text-gray-700 text-base flex-1 hidden">
+								Economista e Mestre em Ciências Contábeis na linha de pesquisa
+								de Finanças Corporativas pela Universidade do Vale do Rio dos
+								Sinos - Unisinos e CFA charteholder. Profissional associado à
+								TMA - Turnaround Management Association Brasil. Possui mais de
+								12 anos de experiência no mercado bancário, especialmente com
+								análise, concessão e restruturação de crédito de grandes
+								empresas, já tendo avaliado os maiores grupos empresariais da
+								região Sul do Brasil. Professor de graduação e MBA em
+								disciplinas de Economia e Finanças na Unisinos. Professor de
+								Economia na CFA Society Brazil. Já lecionou sobre renda variável
+								para os profissionais reguladores do Sistema Financeiro
+								Nacional, na Comissão de Valores Mobiliários (CVM). Desenvolve
+								pesquisas técnicas e acadêmicas sobre valuation, crédito,
+								instituições financeiras e estrutura de capital.
+							</p>
+							<div class="pt-4 pb-2">
+								<button
+									class="toggleButton bg-blue-950 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-300"
+								>
+									Saiba Mais
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- card-2 -->
+					<div
+						class="card transform transition duration-500 hover:scale-105 min-w-72 max-w-sm w-full md:w-72 rounded overflow-hidden shadow-lg hover:shadow-xl flex flex-col"
+					>
+						<img
+							class="w-full"
+							src="src/img/geile-luttjohann.jpeg"
+							alt="Geile Luttjohann"
+						/>
+						<div class="px-6 py-4 flex-1 flex flex-col">
+							<div class="font-bold text-xl mb-2">Geile Luttjohann - CLO</div>
+							<p class="cardText text-gray-700 text-base flex-1 hidden">
+								Bacharel em Direito pela UNISINOS, possui especialização em
+								Direito Empresarial (Ebradi) e Direito Bancário (Verbo
+								Jurídico), atualmente cursando Pós-Graduação em Contabilidade,
+								Gestão Financeira e Fiscal, PósGraduação em Gestão Financeira e
+								MBA em Gestão de Projetos e Metodologias Ágeis. Possui
+								certificações em Gestão Financeira e Desempenho Empresarial
+								(Insper), Contabilidade Financeira (FGV), Crédito e Risco (FGV),
+								Falências e Recuperação de Empresas (FGV) e Sustentabilidade
+								Corporativa, Regulação e Transparência em ESG (FGV). Possui mais
+								de 15 anos de experiência no mercado bancário, com foco na
+								análise de empresas e concessão de crédito. Atua como advogada
+								desde 2015, com experiência em contratos bancários e
+								empresariais, além de atuação direta em processos de recuperação
+								judicial de empresas e assessoria em processos de fusões e
+								aquisições.
+							</p>
+							<div class="pt-4 pb-2">
+								<button
+									class="toggleButton bg-blue-950 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-300"
+								>
+									Saiba Mais
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</main>
+
+		<footer class="mx-auto w-full bg-black text-white text-center">
+			<p class="pt-24">VOC Finance</p>
+			<p class="pb-24">© Todos os direitos reservados</p>
+		</footer>
+
+		<a
+			href="https://api.whatsapp.com/send?phone=5551989560443&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20VOC."
+			target="_blank"
+			class="fixed bottom-2 right-2 z-20"
+			><img src="src/img/whats-only.png" alt="whatsapp-logo" class="w-24"
+		/></a>
+
+		<script src="src/js/main.js"></script>
+	</body>
+</html>
