@@ -1852,11 +1852,11 @@ video {
 }
 
 .bg-founders-image{
-  background-image: url('src/img/office.jpeg');
+  background-image: url('../src/img/office.jpeg');
 }
 
 .bg-info-image{
-  background-image: url('src/img/compass.jpeg');
+  background-image: url('../src/img/compass.jpeg');
 }
 
 .decoration-slice{
