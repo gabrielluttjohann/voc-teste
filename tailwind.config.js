@@ -8,9 +8,9 @@ module.exports = {
 			},
 
 			backgroundImage: {
-				"info-image": "url('../src/img/compass.jpeg')",
-				"puzzle-image": "url('../src/img/puzzle.jpg')",
-				"founders-image": "url('../src/img/office.jpeg')",
+				"info-image": "url('../src/img/backgrounds/bg-1.jpeg')",
+				"founders-image": "url('../src/img/backgrounds/bg-2.jpeg')",
+				
 			},
 		},
 		plugins: [],
